@@ -11,6 +11,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define TIMEOUT 300
+
 behaviors {
     studio_unlock: studio_unlock {
         compatible = "zmk,behavior-input-two-axis";
@@ -25,6 +26,10 @@ behaviors {
 };
 
 / {
+    chosen {
+        zmk,endpoint = &usb0;
+    };
+
     combos {
         compatible = "zmk,combos";
         combo_btclr {
