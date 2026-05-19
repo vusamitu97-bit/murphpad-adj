@@ -21,10 +21,6 @@
 };
 
 / {
-    chosen {
-        zmk,endpoint = &usb0;
-    };
-
     combos {
         compatible = "zmk,combos";
 
